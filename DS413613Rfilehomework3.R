@@ -12,6 +12,9 @@ flights1 %>%
 
 
 # data.table code
-  
+flights2 <- fread("nyc14.csv")  
+flights2
+
+flights2[carrier == "AA" & origin == "JFK" & air_time < 500 & distance < 2000]
   
 
